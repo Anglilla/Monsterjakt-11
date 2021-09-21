@@ -176,9 +176,11 @@ ctrl+f för att snabbt hitta de platser du behöver ändra på.-->
               <br />
               <br />
               Medan du bläddrar lite i boken ser du i ögonvrån något verkar sväva förbi. Det är ett spöke! 
-               
+              <br />
+              <br />
+              Nu gäller det. Är du redo att anta utmaningen, ja eller nej?
             </p>
-            <img src="img/Utmaning 1.jpg" alt="Bild på ett spöke">
+            <img src="img/Utmaning 1.jpg" alt="Bild på boken Nelly Rapp Fälthandbok för monsteragenter">
           </div>
         </div>
       </div>
@@ -286,11 +288,11 @@ ctrl+f för att snabbt hitta de platser du behöver ändra på.-->
       if (answer == "svar1" || answer == "svar2" answer == "svar3" )
       */
 
-      if (answer == "ändra") { /*Kom ihåg att svaret skall skrivas med gemener*/
+      if (answer == "ja") { /*Kom ihåg att svaret skall skrivas med gemener*/
           return true;
       }else{
         document.getElementById("answer").value ="";
-        document.getElementById("answer").setAttribute("placeholder","Det var tyvärr fel svar, försök igen!");
+        document.getElementById("answer").setAttribute("placeholder","Tack för att du försökte, kom tillbaka när du känner dig lite modigare!");
         return false;
       }
     }
